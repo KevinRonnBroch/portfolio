@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: "Inria sans", serif;
+}
+body{
+    background-color: #C2D7F2;
+}
+h1{
+    font-size: 54px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+h2{
+    font-size: 64px;
+    font-weight: 600;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    font-size: 16px;
+    font-weight: normal;
+}
+/*TEKST OG BILLEDER*/
+.luft{
+    margin-top: 10%;
+}
+.pf1{
+    margin: 3%;
+    text-align: center;
+}
+.pmbl{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+.pmbr{
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+.pmbr2{
+    margin-left: 2%;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+ul{
+    list-style-type: disc;
+    margin: 20px;
+    padding-left: 40px;
+}
+.portraet1 img{
+    margin: 2%;
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+.portraet2 img {
+    margin: 2%;
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/*HEADER*/
+.header1{
+    position: relative;
+    height: 60vh;
+    background-image: url(/portfolioeksamen/img/Valt1.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.header2{
+    position: relative;
+    height: 50vh;
+    background-image: url(/portfolioeksamen/img/snowboard.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.headercontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.logo{
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top:0.3%;
+}
+
+/*MENU*/
+.burger-menu {
+    position: relative;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 4px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 50px;
+    background: #99BFF2;
+    color: white;
+    position: absolute;
+    top: 170%;
+    
+    text-align: center;
+    font-size: 30px;
+}
+
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: black;
+}
+.menu a:active{
+    color: #F2B988;
+}
+/*FOOTER*/
+footer{
+    background-color: #99BFF2;
+}
+.footercontent1{
+    margin-left: 2%;
+}
+.social img{
+max-width: 30px;
+max-height: 30px;
+}
+.fm{
+    font-size: 20px;
+}
